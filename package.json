@@ -1,0 +1,88 @@
+{
+  "name": "@kybernetix/sdk",
+  "version": "0.0.0",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "description": "A lightweight client-side SDK for working with Kybernetix Feature Flags",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "Kybernetix",
+    "Feature Flags",
+    "Feature Toggle",
+    "Client SDK",
+    "Flag Management",
+    "Remote Config",
+    "Cloud",
+    "Integration",
+    "JavaScript",
+    "TypeScript",
+    "SDK"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "typecheck": "tsc --noEmit",
+    "prettier:formatting": "npx prettier --write ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kybernetix-platform/sdk.git"
+  },
+  "author": "Polevov Evgenii <epolevov@emd.one>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kybernetix-platform/sdk/issues"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "repositoryUrl": "https://github.com/kybernetix-platform/sdk.git",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/kybernetix-platform/sdk.git#readme",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.6.0",
+    "@types/uuid": "^10.0.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.27.2",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0"
+  }
+}
