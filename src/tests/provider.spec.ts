@@ -1,10 +1,10 @@
-import { KybernetixManager } from '../src/provider';
+import { KybernetixManager } from '../provider';
 import {
   IManagerOptions,
   IDeclareFeatureOptions,
   IDeclareFeatureMeta,
   ComposedDeclareFeatureOptions,
-} from '../src/types/provider';
+} from '../types/provider';
 
 describe('KybernetixManager', () => {
   let fetchMock: jest.Mock;
