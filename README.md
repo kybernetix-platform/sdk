@@ -1,6 +1,6 @@
 # Kybernetix SDK
 
-A lightweight client-side SDK for working with **Kybernetix Feature Flags**.  
+A lightweight client-side SDK for working with **Kybernetix Platform**.  
 It allows you to:
 
 - Declare features programmatically  
