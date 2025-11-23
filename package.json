@@ -1,6 +1,6 @@
 {
   "name": "@kybernetix/sdk",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "types": "dist/index.d.ts",
   "description": "A lightweight client-side SDK for working with Kybernetix Feature Flags",
