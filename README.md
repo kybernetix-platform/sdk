@@ -13,7 +13,7 @@ The SDK includes full TypeScript types and a Jest test suite.
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```sh
 npm install @kybernetix/manager
@@ -23,7 +23,7 @@ yarn add @kybernetix/manager
 
 ---
 
-## 📦 Usage
+## Usage
 
 ### Initialize the manager
 
@@ -66,7 +66,7 @@ and `false` is returned.
 
 ---
 
-## ⏳ Automatic Syncing
+## Automatic Syncing
 
 After calling `init()`, the manager:
 
@@ -84,7 +84,7 @@ This clears the interval and resets the cache.
 
 ---
 
-## 🧩 TypeScript Types
+## TypeScript Types
 
 ```ts
 export interface IManagerOptions {
@@ -111,7 +111,7 @@ export type ComposedDeclareFeatureOptions = IDeclareFeatureOptions & IDeclareFea
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 This SDK comes with full Jest test coverage, including:
 
@@ -123,7 +123,7 @@ This SDK comes with full Jest test coverage, including:
 
 ---
 
-## 📘 Example: Full Integration
+## Example: Full Integration
 
 ```ts
 import { KybernetixManager } from '@kybernetix/sdk';
@@ -152,6 +152,6 @@ main();
 
 ---
 
-## 📄 License
+## License
 
 MIT License.
